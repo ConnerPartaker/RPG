@@ -1,0 +1,29 @@
+ADD AN ENTITY
+
++Entity Class
+	Fill in update(), addEffect(), grounded(), and text()
++Texture
+	Label [ent_name].png in textures/entities/ directory
++Entity Rom
+	In /EntCSVs/ write following order from addEffect, use ByteWrite to save
+*Edit other roms
+	Add entity to effects list in order for other entities to affect it
+*Add entity to room roms
+	Add entity to rooms to spawn somewhere
++Entry in MemDict
+	Add the entity to MemDict using it's id and name
+
+
+ADD A ROOM
+
++Texture
+	Add dir /textures/rooms/[room_name] and fill with textures following
+	 u1, u2, ..., main, o1, o2, ... format
+Room Rom
+	Create the room csv in /RoomCSV/ following format in Fetcher, use ByteWrite
++Entry in MemDict
+	Add the room id and name to MemDict
+
+
+CHANGE ENTITY ID
+~MemDict Entry Changed (ents and ids)
